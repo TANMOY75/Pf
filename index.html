@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Jane Doe — Senior Product Designer</title>
+  <meta name="description" content="Portfolio of Jane Doe, award-winning product designer crafting human-centered digital experiences."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" href="assets/favicon.ico"/>
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="assets/avatar.webp"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jane Doe — Senior Product Designer"/>
+  <meta property="og:description" content="Portfolio of Jane Doe, award-winning product designer..."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://jane-doe.dev/assets/og.jpg"/>
+  <meta property="og:url" content="https://jane-doe.dev"/>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jane Doe",
+    "jobTitle": "Senior Product Designer",
+    "url": "https://jane-doe.dev",
+    "sameAs": [
+      "https://linkedin.com/in/janedoe",
+      "https://dribbble.com/janedoe"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="container" aria-label="Primary">
+      <ul role="list" class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/resume.pdf" class="btn" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero container">
+      <div>
+        <h1>Hi, I’m <span>Jane Doe</span>.<br>I craft digital products people love.</h1>
+        <p class="hero-text">Award-winning product designer with 10+ years turning complex problems into elegant, accessible solutions.</p>
+        <a href="#contact" class="btn">Let’s work together</a>
+      </div>
+      <picture>
+        <source srcset="assets/avatar.webp" type="image/webp"/>
+        <img src="assets/avatar.jpg" alt="Portrait of Jane Doe smiling." width="400" height="400"/>
+      </picture>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container">
+      <h2>About</h2>
+      <p>Currently leading design at <strong>Acme Health</strong>, where my team and I shipped a telehealth platform serving 3 M patients. Previously at Spotify, I improved the Creator Studio onboarding, lifting activation by 28 %.</p>
+      <p>When I’m not pushing pixels, I mentor under-represented designers, speak at conferences, and photograph street architecture.</p>
+    </section>
+
+    <!-- SELECTED PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=60" alt=""/>
+            <div class="card-body">
+              <h3>Acme Health — Telehealth Redesign</h3>
+              <p>End-to-end redesign of the patient booking flow, cutting drop-off by 42 %.</p>
+              <a href="https://behance.net/gallery/acme" target="_blank" rel="noopener">Case study ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=60" alt=""/>
+            <div class="card-body">
+              <h3>Spotify — Creator Onboarding</h3>
+              <p>Re-imagined the first-run experience for podcasters, boosting weekly active creators by 28 %.</p>
+              <a href="https://medium.com/spotify/creator-onboarding" target="_blank" rel="noopener">Read more ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=60" alt=""/>
+            <div class="card-body">
+              <h3>Neobank — Design System</h3>
+              <p>Built and scaled a multi-brand design system used across 5 product teams.</p>
+              <a href="https://github.com/neobank/design-system" target="_blank" rel="noopener">Repository ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+      <h2>Let’s build something great</h2>
+      <p>Available for select freelance & advisory work.</p>
+      <a href="mailto:hello@jane-doe.dev" class="btn">hello@jane-doe.dev</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Jane Doe. Made with ☕ in Berlin.</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
