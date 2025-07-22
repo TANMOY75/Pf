@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --clr-bg: #ffffff;
+  --clr-bg-alt: #f5f7fa;
+  --clr-text: #111827;
+  --clr-primary: #0f766e;
+  --clr-accent: #14b8a6;
+  --clr-muted: #6b7280;
+
+  /* Dark mode overrides */
+  @media (prefers-color-scheme: dark) {
+    --clr-bg: #111827;
+    --clr-bg-alt: #1f2937;
+    --clr-text: #f9fafb;
+    --clr-primary: #2dd4bf;
+    --clr-accent: #5eead4;
+  }
+
+  /* Typography */
+  --ff-base: "Inter", system-ui, sans-serif;
+  --fs-base: clamp(1rem, 0.95vw + 0.88rem, 1.125rem);
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Spacing */
+  --section-padding: clamp(4rem, 8vw, 8rem);
+  --container-max: 75rem;
+  --radius: 0.5rem;
+}
